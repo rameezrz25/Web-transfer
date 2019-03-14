@@ -1,0 +1,54 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+  body {
+    background-image: url("record.gif");
+   background-color: #000000;
+  }
+  video {
+    width: 500;
+    height: 380;
+    margin-left: 60%;
+    border: 2px solid #e2e2e2;
+    box-shadow: 0 3px 3px rgba(0,0,1,0.2);
+  }
+  button#recCamera{
+    margin-left: 10%;
+  }
+   button#recStop{
+    margin-left: 10%;
+    visibility: hidden;
+  }
+  button#playButton{
+    margin-left: 10%;
+    visibility: hidden;
+    float:left;
+    display:inline-block;
+  }
+  button#downloadButton{
+    margin-left: 5%;
+    margin-top: 10px;
+    visibility: hidden;
+    float:left;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+	<h2 style="margin-left: 80%;font-family:Times New Roman"><span class="label label-default">&nbsp;Screen Record &nbsp;</span></h2><br><br>
+  <video id="video" autoplay></video>
+  <p>
+   <br><br>
+    <button id="recCamera" class="btn btn-success"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;Record Camera</button>
+   
+  </p>
+   <button id="recStop" class="btn btn-danger" ><span class="glyphicon glyphicon-stop"></span>&nbsp;Stop Recording</button>
+   <p>
+   <button id="playButton" class="btn btn-success btn-sm" > <span class="glyphicon glyphicon-play"></span>&nbsp;Play Recording</button><br>
+   <button id="downloadButton" class="btn btn-warning btn-sm" ><span class="glyphicon glyphicon-download"></span>&nbsp;Download file</button>
+   </p>
+  <script src="recording.js"></script>
+</body>
+</html>

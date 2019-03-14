@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      background-image: url("skype-video-call.jpg");
+  background-color: #000000;
+      
+    }
+    video {
+      max-width: calc(50% - 300px);
+      margin:10% 10%;
+      box-sizing: border-box;
+      border-radius: 2px;
+      box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1 style="margin-left: 5%;font-family:courier"><span class="label label-default">&nbsp;Video Call&nbsp;</span></h1>
+  <video id="localVideo" autoplay></video>
+  <video id="remoteVideo" autoplay style="margin-left: 10%;"></video>
+  <script src="video-call.js"></script>
+</body>
+</html>

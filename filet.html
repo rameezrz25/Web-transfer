@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="WebRTC code samples">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  
+</head>
+
+<style>
+body{
+  background-image: url("file.png");
+  background-color: #000000;
+  
+}
+div.progress, div#bitrate {
+  margin: 0 1em 2em 0;
+}
+
+div.progress div.label {
+  font-weight: 400;
+  color:#3b5998;
+}
+
+form {
+  margin: 0 0 1em 0;
+  white-space: nowrap;
+}
+
+progress {
+  width: 100.5em;
+}
+</style>
+
+<body>
+<h2 style="margin-left: 80%;font-family:Times New Roman"><span class="label label-default">&nbsp;File Transfer &nbsp;</span></h2>
+  <div id="container" style="margin-top:20%;margin-left: 55%;">
+
+    <section>
+      <div >
+        <form id="fileInfo">
+          <input type="file" id="fileInput" name="files" multiple/>
+        </form>
+        <button disabled id="sendFile" class="btn btn-success">Send</button>
+        
+        <!-- <button disabled id="abortButton" class="btn btn-danger">Abort</button> -->
+      </div>
+      <br>
+      <span >Send progress: </span>
+      <div class="progress">
+        
+        <progress id="sendProgress" max="0" value="0"></progress>
+      </div>
+<br>
+      <span >Receive progress: </span>
+      <div class="progress">
+        <progress id="receiveProgress" max="0" value="0"></progress>
+      </div>
+
+      <div id="bitrate"></div>
+      <a id="download"></a>
+      <span id="status"></span>
+
+    </section>
+  </div>
+<script src="filet.js"></script>
+</body>
+</html>
